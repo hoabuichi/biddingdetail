@@ -51,6 +51,7 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="readmore.min.js"></script>
   </head>
   <body>
     <main>
@@ -99,7 +100,7 @@
                 </div>
                 <div class="content-down">
                   <h3 class="view-more-title">Thông tin thêm</h3>
-                  <p class="view-more-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus facilisis arcu sit id amet lectus nec eros, fames. Id nibh vulputate velit, in odio. Tellus mollis purus, tempor, pulvinar facilisis. Egestas viverra id est augue eu quis turpis. Tincidunt enim suspendisse rutrum sit amet. Porttitor metus vel molestie est porttitor orci varius. Porttitor dui, elementum lorem adipiscing dolor. Pulvinar egestas ultrices amet auctor ut commodo commodo vitae varius. Neque, nisl, eget viverra massa ac consequat. . Porttitor metus vel molestie est porttitor orci varius. Porttitor dui, elementum lorem adipiscing dolor. Pulvinar egestas ultrices amet auctor ut commodo commodo vitae varius. Neque, nisl, eget viverra massa ac consequat . Porttitor metus vel molestie est porttitor orci varius. Porttitor dui, elementum lorem adipiscing dolor. Pulvinar egestas ultrices amet auctor ut commodo commodo vitae varius. Nequat lementum lorem adipiscing dolor. Pulvinar egestas ultrices amet auctor ut commodo commodo vitae varius. Neque, nisl, eget viverra massa ac consequat . Porttitor metus vel molestie est porttitor orci varius. Porttitor dui, elementum lorem adipiscing dolor. Pulvinar egestas ultrices amet auctor ut commodo commodo vitae varius. Neq lra mactor ut commodo commodo vitae varius. Neq</p>
+                  <p class="view-more-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus facilisis arcu sit id amet lectus nec eros, fames. Id nibh vulputate velit, in odio. Tellus mollis purus, tempor, pulvinar facilisis. Egestas viverra id est augue eu quis turpis. Tincidunt enim suspendisse rutrum sit amet. Porttitor metus vel molestie est porttitor orci varius. Porttitor dui, elementum lorem adipiscing dolor. Pulvinar egestas ultrices amet auctor ut commodo commodo vitae varius. Neque, nisl, eget viverra massa ac consequat. . Porttitor metus vel molestie est porttitor orci varius. Porttitor dui, elementum lorem adipiscing dolor. Pulvinar egestas ultrices amet auctor ut commodo commodo vitae varius. Neque, nisl, eget viverra massa ac consequat . Porttitor metus vel molestie est porttitor orci varius. Porttitor dui, elementum lorem adipiscing dolor. Pulvinar egestas ultrices amet auctor ut commodo commodo vitae varius. Nequat lementum lorem adipiscing dolor. Pulvinar egestas ultrices amet auctor ut commodo commodo vitae varius. Neque, nisl, eget viverra massa ac consequat . Porttitor metus vel molestie est porttitor orci varius. Porttitor dui, elementum lorem adipiscing dolor. Pulvinar egestas ultrices amet auctor ut commodo commodo vitae varius. Neq lra mactor ut commodo commodo vitae varius. Neq</p>
                 </div>
               </div>
               
@@ -113,19 +114,19 @@
                   <div class="time-countdown">
                     <div class="countdown">
                       <div class="time-item">
-                        <div class="box-number">11</div>
+                        <div class="box-number day-box">0</div>
                         <div class="label"><span>Ngày</span></div>
                       </div>
                       <div class="time-item">
-                        <div class="box-number">09</div>
+                        <div class="box-number hour-box">0</div>
                         <div class="label"><span>Giờ</span></div>
                       </div>
                       <div class="time-item">
-                        <div class="box-number">30</div>
+                        <div class="box-number minute-box">0</div>
                         <div class="label"><span>Phút</span></div>
                       </div>
                       <div class="time-item">
-                        <div class="box-number">16</div>
+                        <div class="box-number second-box">0</div>
                         <div class="label"><span>Giây</span></div>
                       </div>
                     </div>
@@ -168,265 +169,128 @@
           </div>
           <div class="bidding-tabs">
             <div class="tabs">
-              <div class="tab active">Đảm bảo dự thầu</div>
-              <div class="tab">Tham dự thầu</div>
-              <div class="tab">Mở thầu</div>
+              <div class="tab active" id="guarantee">Đảm bảo dự thầu</div>
+              <div class="tab" id="join">Tham dự thầu</div>
+              <div class="tab" id="open">Mở thầu</div>
             </div>
             <div class="tab-content">
-              <div class="guarantee-tab">guarantee-tab</div>
-              <div class="join-tab"></div>
-              <div class="open-tab"></div>
+              <div class="guarantee-tab content-tab">
+                <div class="bidding-info-item">
+                  <div class="label">
+                    <p>Số tiền đảm bảo dự thầu</p>
+                  </div>
+                  <p class="content">11,000,000 (Mười một triệu đồng chẵn)</p>
+                </div>
+                <div class="bidding-info-item">
+                  <div class="label">
+                    <p>Hồ sơ mời thầu</p>
+                  </div>
+                  <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat sem congue maecenas cursus proin ut. Venenatis mollis semper viverra euismod ultrices. Vitae sed eu senectus nunc. Ut velit, sem odio eget. Malesuada et malesuada purus quis vitae. Aliquam, porttitor nulla leo, sem duis viverra non cras pellentesque. Vivamus diam mattis magna rutrum. Eros, lacus, gravida tortor enim, amet, at. Lectus morbi ut tellus orci, ultricies. Enim orci pretium non sed pellentesque enim consequat aliquam tellus. Lacinia ut aenean diam augue lorem. Rutrum purus pellentesque rutrum purus iaculis suscipit urna. Sem non turpis vehicula lacus arcu mi. Sit sodales adipiscing quis nec ut phasellus. Nullam adipiscing vestibulum pharetra, integer. Tristique sit maecenas massa a egestas tristique scelerisque aliquam. Quisque amet scelerisque sed nunc. Eget congue fames lectus varius turpis vulputate venenatis, facilisi bibendum. Egestas ullamcorper eget aliquam vestibulum et, cras proin massa augue.</p>
+                </div>
+                <div class="bidding-info-item">
+                  <div class="label">
+                    <p>Số tiền đảm bảo dự thầu</p>
+                  </div>
+                  <p class="content">-</p>
+                </div>
+              </div>
+              <div class="join-tab content-tab" style="display: none;">
+                <div class="bidding-info-item">
+                  <div class="label">
+                    <p>Hình thức dự thầu</p>
+                  </div>
+                  <p class="content">11,000,000 (Mười một triệu đồng chẵn)</p>
+                </div>
+                <div class="bidding-info-item">
+                  <div class="label">
+                    <p>Thời gian E-HSDT</p>
+                  </div>
+                  <p class="content">từ 11:17 08/05/2022  đến 09:00 14/05/2022</p>
+                </div>
+                <div class="bidding-info-item">
+                  <div class="label">
+                    <p>Phát hành E-HSMT</p>
+                  </div>
+                  <p class="content">Miền phí</p>
+                </div>
+                <div class="bidding-info-item">
+                  <div class="label">
+                    <p>Thời gian hiệu lực E-HSMT</p>
+                  </div>
+                  <p class="content">150 ngày</p>
+                </div>
+                <div class="bidding-info-item">
+                  <div class="label">
+                    <p>Địa điểm nhận HSDT</p>
+                  </div>
+                  <p class="content"><a href="https://evecom.vn/aution">https://evecom.vn/aution</a></p>
+                </div>
+                <div class="bidding-info-item">
+                  <div class="label">
+                    <p>Địa điểm thực hiện gói thầu</p>
+                  </div>
+                  <p class="content">Tỉnh Đồng Tháp</p>
+                </div>
+              </div>
+              <div class="open-tab content-tab" style="display: none;">
+                <div class="bidding-info-item">
+                  <div class="label">
+                    <p>Thời điểm đóng/ mở thầu</p>
+                  </div>
+                  <p class="content">09:00 14/05/2022</p>
+                </div>
+                <div class="bidding-info-item">
+                  <div class="label">
+                    <p>Địa điểm mở thầu</p>
+                  </div>
+                  <p class="content">https://evecom.vn/aution</p>
+                </div>
+                <div class="bidding-info-item">
+                  <div class="label">
+                    <p>Dự toán gói thầu</p>
+                  </div>
+                  <p class="content">11,000,000 (Mười một triệu đồng chẵn)</p>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="bottom-banner"></div>
         </div>
       </div>
     </main>
     <script>
-      $(".request-new-price-list").slick({
-        dots: true,
-        infinite: false,
-        arrows: false,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true,
-            },
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-        ],
-      });
-      
-      $(".bidding-knowledge-items").slick({
-        dots: true,
-        infinite: false,
-        arrows: false,
-        speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              infinite: true,
-              dots: true,
-            },
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-        ],
-      });
-      
+      $(".bidding-tabs .tab").click(function(){
+        $(".bidding-tabs .tab").removeClass("active");
+        $(this).addClass("active");
+        $(".content-tab").hide();
+        let id = $(this).attr("id");
+        $("." + id + "-tab").show();
+      })
 
-      $(".rating-post-items").slick({
-        dots: true,
-        infinite: false,
-        arrows: false,
-        speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              infinite: true,
-              dots: true,
-            },
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-        ],
-      });
-      
-
-      $(".company-items").slick({
-        dots: true,
-        infinite: false,
-        arrows: false,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true,
-            },
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-        ],
-      });
-      
-      $(".finised-biddings-list").slick({
-        dots: true,
-        infinite: false,
-        arrows: false,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true,
-            },
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-        ],
+      $(".view-more-description").readmore({
+        speed: 75,
+        lessLink: '<a href="#">Thu gọn</a>',
+        moreLink: '<a href="#">Xem thêm</a>',
+        collapsedHeight: 264
       });
 
-      if (window.matchMedia("(max-width: 767px)").matches) {
-        $(".news-list").slick({
-          dots: true,
-          infinite: false,
-          arrows: false,
-          speed: 500,
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          responsive: [
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-              },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
-            },
-          ],
-        });
+      let second = 965107
+
+      function secondsToDhms(seconds) {
+        seconds = Number(seconds);
+        var d = Math.floor(seconds / (3600*24));
+        var h = Math.floor(seconds % (3600*24) / 3600);
+        var m = Math.floor(seconds % 3600 / 60);
+        var s = Math.floor(seconds % 60);
+        $(".day-box").text(d)
+        $(".hour-box").text(h)
+        $(".minute-box").text(m)
+        $(".second-box").text(s)
       }
-    </script>
-
-    <script>
-      var data = {
-        labels: [
-          "Hàng hóa",
-          "Xây lắp",
-          "Tư vấn",
-          "Phi tư vấn",
-          "Hỗn hợp"
-        ],
-        datasets: [
-          {
-            data: [300, 50, 100, 80, 70],
-            backgroundColor: [
-              "#4079D1",
-              "#EA9D43",
-              "#4BB953",
-              "#E55252",
-              "#4D4D4D"
-            ],
-            hoverBackgroundColor: [
-              "#4079D1",
-              "#EA9D43",
-              "#4BB953",
-              "#E55252",
-              "#4D4D4D"
-            ]
-          }]
-      };
-
-      const config = {
-        type: 'doughnut',
-        data: data,
-        options: {
-          responsive: true,
-          cutout: 120,
-          plugins: {
-            legend: {
-              position: 'bottom',
-            }
-          }
-        },
-      };
-    </script>
-    <script>
-      const myChart = new Chart(document.getElementById("statistics-chart"), config);
+      setInterval(function () {
+        secondsToDhms(second);
+        second--;
+      }, 1000);
     </script>
   </body>
 </html>

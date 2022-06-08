@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+[data-readmore] {
+  transition: height 500ms;
+  overflow: hidden;
+}
+
 .bidding-detail-banner {
   height: 300px;
   background-repeat: no-repeat;
@@ -135,6 +140,14 @@
           font-size: 14px;
           line-height: 24px;
           color: #333333;
+          margin-bottom: 10px;
+
+          + a {
+            font-size: 14px;
+            line-height: 24px;
+            text-decoration: none;
+            color: #1F4F9B;
+          }
         }
       }
     }
@@ -350,7 +363,7 @@
   }
 
   .bidding-tabs {
-
+    margin-top: 20px;
     .tabs {
       display: flex;
 
@@ -392,6 +405,47 @@
       background: #FFFFFF;
       border-radius: 0px 6px 6px 6px;
       padding: 50px 45px;
+
+      .bidding-info-item {
+        display: grid;
+        grid-template-columns: 350px 1fr;
+        grid-column-gap: 26px;
+        margin-bottom: 6px;
+
+        p {
+          margin-bottom: 0;
+          display: flex;
+          align-items: center;
+
+          a {
+            text-decoration: none;
+            color: #1F4F9B;
+          }
+        }
+
+        .label {
+          background-color: #EEEEEE;
+          display: flex;
+          align-items: center;
+          padding: 14px;
+
+          p {
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+          }
+        }
+      }
     }
+  }
+
+  .bottom-banner {
+    height: 154px;
+    background-image: url("./images/bottom-banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+    margin-top: 20px;
   }
 }
