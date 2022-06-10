@@ -16,6 +16,10 @@
   background-size: cover;
   background-position: center;
 
+  @media(max-width: 767px) {
+    height: 200px;
+  }
+
   .content {
     position: relative;
     height: 100%;
@@ -28,6 +32,17 @@
       padding: 6px 12px;
       background: #FFFFFF;
       border-radius: 20px;
+      margin-left: 12px;
+      margin-right: 12px;
+
+      @media(max-width: 767px) {
+        bottom: 50%;
+        transform: translateY(20px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: calc(100vw - 24px);
+      }
 
       a {
         text-decoration: none;
@@ -154,6 +169,10 @@
   }
 
   .right-side {
+    @media(max-width: 1399px) {
+      margin-top: 12px;
+    }
+
     .content {
 
       .content-up {
@@ -256,12 +275,20 @@
           justify-content: space-between;
           align-items: center;
 
+          @media(max-width: 1399px) {
+            padding: 0 16px;
+          }
+
           a {
             text-decoration: none;
             font-size: 14px;
             line-height: 18px;
             color: #1F4F9B;
             cursor: pointer;
+
+            @media(max-width: 1399px) {
+              font-size: 12px;
+            }
           }
 
           .dot-circle {
@@ -367,6 +394,11 @@
     .tabs {
       display: flex;
 
+      @media(max-width: 767px) {
+        justify-content: space-between;
+        margin: 0 -3px;
+      }
+
       .tab {
         background: #FFFFFF;
         border-radius: 6px 6px 0px 0px;
@@ -381,6 +413,11 @@
         width: 177px;
         margin-right: 8px;
         cursor: pointer;
+
+        @media(max-width: 767px) {
+          font-size: 13px;
+          margin: 0 3px;
+        }
 
         &.active {
           color: #EE6D0F;
@@ -406,11 +443,22 @@
       border-radius: 0px 6px 6px 6px;
       padding: 50px 45px;
 
+      @media(max-width: 767px) {
+        border-radius: 0;
+        padding: 20px 12px;
+      }
+
       .bidding-info-item {
         display: grid;
         grid-template-columns: 350px 1fr;
         grid-column-gap: 26px;
         margin-bottom: 6px;
+
+        @media(max-width: 767px) {
+          grid-template-columns: 1fr;
+          margin-bottom: 20px;
+          border: 1px solid #e4e2e2;
+        }
 
         p {
           margin-bottom: 0;
@@ -434,6 +482,11 @@
             line-height: 20px;
             color: #000000;
           }
+        }
+
+        .content {
+          min-height: 48px;
+          padding: 10px;
         }
       }
     }
