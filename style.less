@@ -122,6 +122,10 @@
             background: #999999;
             border-radius: 50%;
             margin: 0 24px;
+
+            @media(max-width: 767px) {
+              margin: 0 15px;
+            }
           }
     
           .view-numbers, .cv-numbers {
@@ -384,6 +388,7 @@
           line-height: 20px;
           color: #333333;
           margin-bottom: 0;
+          font-size: 14px;
         }
       }
     }
@@ -465,6 +470,10 @@
           display: flex;
           align-items: center;
 
+          @media(max-width: 767px) {
+            font-size: 14px;
+          }
+
           a {
             text-decoration: none;
             color: #1F4F9B;
@@ -481,6 +490,10 @@
             font-size: 16px;
             line-height: 20px;
             color: #000000;
+
+            @media(max-width: 767px) {
+              font-size: 14px;
+            }
           }
         }
 
@@ -528,6 +541,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media(max-width: 767px) {
+      width: calc(100vw - 24px);
+    }
 
     img {
       margin-bottom: 24px;
