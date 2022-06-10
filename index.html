@@ -258,6 +258,16 @@
         </div>
       </div>
     </main>
+    <div class="no-result-popup" style="display: none;">
+      <div class="no-result-dropback"></div>
+      <div class="popup-content">
+        <img src="images/no-result.png" />
+        <p class="modal-text">Hiện tại chưa có kết quả chấm thầu.</p>
+        <p>Chúng tôi sẽ thông báo khi có kết quả </p>
+        <p>Trân trọng !</p>
+        <button class="close-btn">Đóng</button>
+      </div>
+    </div>
     <script>
       $(".bidding-tabs .tab").click(function(){
         $(".bidding-tabs .tab").removeClass("active");
@@ -291,6 +301,14 @@
         secondsToDhms(second);
         second--;
       }, 1000);
+
+      $(".join-btn").click(function() {
+        $('.no-result-popup').show()
+      });
+
+      $(".close-btn, .no-result-dropback").click(function() {
+        $('.no-result-popup').hide()
+      });
     </script>
   </body>
 </html>
